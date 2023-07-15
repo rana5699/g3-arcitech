@@ -3,10 +3,70 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+.common-h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.primary-btn{
+    width: 150px;
+    height: 54px;
+    border-radius: 8px;
+    border: 0;
+    background: #FF900E;
+    margin-top: 10px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
 }
 /* commmon CSS styles END here */
 
 /* Header CSS styles START here */
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 160px;
+}
+/* Nav-menu START here */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+/* Nav-menu END here */
+
+/* Banner START here */
+.banner-container img{
+    width: 100%;
+}
+.banner-content{
+    max-width: 562px;
+    text-align: center;
+    margin: 50px auto;
+}
+.banner-tittle{
+    font-size: 3.5rem;
+    color: #131313;
+    font-weight: 700;
+}
+.banner-description{
+    font-weight: 400;
+    color: #727272;
+    line-height: 26px; 
+}
+/* Banner END here */
 /* Header CSS styles END here */
 
 /*  Main CSS styles START here */
@@ -14,3 +74,31 @@
 
 /* Footer CSS styles START here */
 /* Footer CSS styles END here */
+
+/* Responsive START now for small devices */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    .common-h1{
+        margin-bottom: 10px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .banner-content{
+        margin: 20px auto;
+    }
+}
+/* Responsive END now for small devices */
+
+/* Responsive START now for medium devices */
+@media screen and (min-width: 576px) and (max-width: 990px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+/* Responsive END now for medium devices */
